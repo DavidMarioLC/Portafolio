@@ -9,7 +9,7 @@
 @font-face {
   font-family: "wotfard";
   src: url("/fonts/Wotfard-Bold.ttf");
-  font-style: medium;
+  font-style: bold;
   font-weight: 700;
   font-display: swap;
 }
@@ -42,7 +42,7 @@
   --titleHero-mobile: 700 2rem "poppins";
   --description-desktop: normal 1.5rem/1.9rem "wotfard";
   --description-mobile: normal 1.125rem/1.5rem "wotfard";
-  --button-text: 700 1rem/1.5rem "wotfard";
+  --button-text: 500 1rem/1.5rem "wotfard";
   --title-section: 700 2rem "poppins";
   --project-title: 700 1.5rem "poppins";
   --project-description: normal 1rem/1.5rem "wotfard";
