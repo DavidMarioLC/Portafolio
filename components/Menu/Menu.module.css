@@ -1,0 +1,19 @@
+.nav {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.link {
+  font: var(--menu-desktop);
+  color: var(--tertiary);
+}
+
+@media (min-width: 920px) {
+  .nav {
+    display: block;
+  }
+}
