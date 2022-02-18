@@ -19,11 +19,11 @@ export const Technologies = () => {
     { id: "1", name: "HTML", image: logoHTML },
     { id: "2", name: "CSS", image: logoCSS },
     { id: "3", name: "JavaScript", image: logoJS },
-    { id: "8", name: "SASS", image: logoSASS },
-    { id: "4", name: "Figma", image: logoFigma },
-    { id: "5", name: "React", image: logoReact },
-    { id: "6", name: "Redux", image: logoRedux },
-    { id: "7", name: "Next", image: logoNext },
+    { id: "4", name: "SASS", image: logoSASS },
+    { id: "5", name: "Figma", image: logoFigma },
+    { id: "6", name: "React", image: logoReact },
+    { id: "7", name: "Redux", image: logoRedux },
+    { id: "8", name: "Next", image: logoNext },
     { id: "9", name: "TypeScript", image: logoTS },
     { id: "10", name: "Jest", image: logoJest },
     { id: "11", name: "Firebase", image: logoFirebase },
@@ -31,8 +31,8 @@ export const Technologies = () => {
   ];
 
   const hiddenTech = (name) => {
-    return false;
-    // return ["Jest", "Firebase", "Testing"].includes(name);
+    // return false;
+    return ["Jest", "Firebase", "Testing"].includes(name);
   };
 
   return (

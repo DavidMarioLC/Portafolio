@@ -24,6 +24,7 @@ const getIcon = (value) => {
     Testing: logoTesting,
     Firebase: logoFirebase,
     Jest: logoJest,
+    Next: logoNext,
   };
   return tech[value];
 };
