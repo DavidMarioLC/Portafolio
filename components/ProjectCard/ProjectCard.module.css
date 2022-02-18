@@ -1,0 +1,101 @@
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  cursor: pointer;
+  /* width: 300px; */
+}
+
+.thumbnailWrapper {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.thumbnail {
+  transition: all 350ms ease-out;
+  will-change: transform;
+  transform: scale(1);
+}
+
+.actionLinks {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  opacity: 1;
+  transition: all 350ms ease-out;
+  will-change: opacity;
+}
+
+.link {
+  display: inline-block;
+  color: black;
+  padding: 8px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgb(126, 121, 121);
+  text-decoration: none;
+  transition: all 350ms ease-out;
+  will-change: transform;
+}
+
+.link:hover {
+  transform: scale(0.9);
+  /* background-color: var(--tertiary); */
+  /* color: #fff; */
+}
+
+.projectCard:hover .thumbnail {
+  transform: scale(1.1);
+}
+
+.name {
+  font: var(--project-title);
+  color: var(--tertiary);
+}
+
+.description {
+  font: var(--project-description);
+  color: var(--description);
+}
+
+.stack {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tagStack {
+  background-color: rgb(43, 51, 59);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 4px;
+  gap: 8px;
+}
+
+.tagStackImageWrapper {
+  height: 16px;
+  width: 16px;
+}
+
+.tagStackName {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .actionLinks {
+    opacity: 0;
+  }
+
+  .projectCard:hover .actionLinks {
+    opacity: 1;
+  }
+}
