@@ -14,7 +14,7 @@ export default function Home({ projects }) {
         {/* open graph */}
         <meta
           property="og:title"
-          content="Portafolio y web personal de DavidMarioLC"
+          content="Portafolio y Web Personal de DavidMarioLC"
         />
         <meta property="og:type" content="website" />
         <meta
@@ -27,7 +27,7 @@ export default function Home({ projects }) {
         />
         <meta
           property="og:description"
-          content="Portafolio y web personal de DavidMarioLC"
+          content="Front End Engineer, Entusiasta de Javascript y amante de CSS y React"
         />
       </Head>
       <Header />
