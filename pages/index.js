@@ -29,18 +29,19 @@ export async function getStaticProps() {
         {
           id: "9",
           name: "Health Store",
-          thumbnail: "/projects/github.webp",
-          linkRepo: "https://github.com/DavidMarioLC/WebApplication-Github",
-          linkDemo: "https://web-application-github.vercel.app",
+          thumbnail: "/projects/healthstore.webp",
+          linkRepo:
+            "https://github.com/DavidMarioLC/webApplication-healthy-store",
+          linkDemo: "https://web-application-healthy-store.vercel.app",
           description: "Compra todo lo que quieras en esta tiendita saludable.",
           technologies: ["React", "TypeScript", "Next"],
         },
         {
           id: "8",
           name: "Dashboard Cursos",
-          thumbnail: "/projects/github.webp",
-          linkRepo: "https://github.com/DavidMarioLC/WebApplication-Github",
-          linkDemo: "https://web-application-github.vercel.app",
+          thumbnail: "/projects/dashboard.webp",
+          linkRepo: "https://github.com/DavidMarioLC/WebApplication-Dashboard",
+          linkDemo: "https://web-application-dashboard.vercel.app/cursos",
           description:
             "Dashboard donde podras eliminar,editar y actualizar tus propios cursos.",
           technologies: ["React", "TypeScript"],
