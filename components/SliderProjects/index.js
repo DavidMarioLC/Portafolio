@@ -1,0 +1,1 @@
+export { SliderProjects } from "./SliderProjects";
