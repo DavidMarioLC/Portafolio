@@ -46,7 +46,7 @@ export async function getStaticProps() {
       projects: [
         {
           id: "9",
-          name: "Health Store",
+          name: "Healthy Store",
           thumbnail: "/projects/healthstore.webp",
           linkRepo:
             "https://github.com/DavidMarioLC/webApplication-healthy-store",
