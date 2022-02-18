@@ -1,9 +1,80 @@
+@font-face {
+  font-family: "poppins";
+  src: url("/fonts/Poppins-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "wotfard";
+  src: url("/fonts/Wotfard-Bold.ttf");
+  font-style: medium;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "wotfard";
+  src: url("/fonts/Wotfard-Regular.ttf");
+  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+}
+
+:root {
+  /* theme */
+  --primary: hsla(0, 0%, 100%, 1);
+  --secondary: hsla(222, 88%, 55%, 1);
+  --tertiary: hsla(220, 23%, 5%, 1);
+  --quaternary: hsla(220, 23%, 95%, 1);
+  --button: hsla(220, 23%, 5%, 1);
+  --blur: hsla(0, 0%, 100%, 0.74);
+  --description: hsl(210, 15%, 37%);
+  --projectsBackground: hsl(220, 23%, 95%);
+  --glassheader: hsla(0, 0%, 100%, 0.5);
+
+  /* fonts */
+  --menu-desktop: 700 1.125rem "wotfard";
+  --menu-mobile: 700 1.5rem "wotfard";
+  --name: 700 1.5rem "poppins";
+  --titleHero-desktop: 700 4rem "poppins";
+  --titleHero-mobile: 700 2rem "poppins";
+  --description-desktop: normal 1.5rem/1.9rem "wotfard";
+  --description-mobile: normal 1.125rem/1.5rem "wotfard";
+  --button-text: 700 1rem/1.5rem "wotfard";
+  --title-section: 700 2rem "poppins";
+  --project-title: 700 1.5rem "poppins";
+  --project-description: normal 1rem/1.5rem "wotfard";
+  --input: normal 1rem "wotfard";
+}
+
+[data-theme="dark"] {
+  --primary: hsla(210, 15%, 6%, 1);
+  --secondary: hsla(222, 88%, 55%, 1);
+  --tertiary: hsla(220, 23%, 95%, 1);
+  --quaternary: hsla(210, 15%, 10%, 1);
+  --button: hsla(222, 88%, 55%, 1);
+  --blur: hsla(220, 23%, 5%, 0.74);
+  --description: hsl(211, 19%, 55%);
+  --projectsBackground: hsl(206, 14%, 10%);
+  --glassheader: hsla(210, 15%, 6%, 0.5);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+
+  color: var(--secondary);
+  background: var(--primary);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -11,6 +82,21 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+h1,
+h3 {
+  margin: 0;
 }
