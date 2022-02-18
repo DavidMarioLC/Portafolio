@@ -8,6 +8,7 @@
 .wrapperPhoto {
   text-align: center;
   position: relative;
+  animation: fly 1.5s ease-in-out 0.5s alternate infinite;
 }
 
 .information {
@@ -22,7 +23,6 @@
 .title {
   font: var(--titleHero-mobile);
   color: var(--tertiary);
-
   margin-bottom: 0.5rem;
 }
 
@@ -43,6 +43,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* style neon*/
+  background-color: hsl(212, 100%, 48%);
+  box-shadow: 0 4px 14px 0 #0056d0;
+  border-radius: 4px;
 }
 
 .button:active {
@@ -51,8 +55,10 @@
 
 .highlightBlue {
   /* color: var(--secondary); */
+
+  /* style neon */
   background-image: linear-gradient(
-    hsl(222, 88%, 55%) 25%,
+    hsl(212, 100%, 48%) 25%,
     hsl(187, 99%, 46%) 100%
   );
   background-clip: text;
@@ -69,10 +75,21 @@
 
 .focus {
   bottom: 40px;
+  animation: fly 1.5s ease-in-out 0.5s alternate infinite;
 }
 
 .target {
   right: 30px;
+  animation: fly 1.5s ease-in-out 0.5s alternate infinite;
+}
+
+@keyframes fly {
+  from {
+    transform: translateY(4px);
+  }
+  to {
+    transform: translateY(-4px);
+  }
 }
 
 @media (min-width: 768px) {

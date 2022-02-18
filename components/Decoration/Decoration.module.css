@@ -15,12 +15,16 @@
   left: -80px;
   top: 104px;
   fill: var(--secondary);
+  /* style neon */
+  fill: hsl(212, 100%, 48%);
 }
 
 .starts {
   position: absolute;
   left: -240px;
   fill: var(--secondary);
+  /* style neon */
+  fill: hsl(212, 100%, 48%);
 }
 
 .zickzack {
@@ -28,6 +32,8 @@
   position: absolute;
   bottom: 0px;
   fill: var(--secondary);
+  /* style neon */
+  fill: hsl(212, 100%, 48%);
 }
 
 .arrow {
@@ -44,11 +50,23 @@
   top: -20px;
   right: 0px;
   fill: var(--secondary);
+  /* style neon */
+  fill: hsl(212, 100%, 48%);
 }
 
 .rocket {
   position: absolute;
   right: 40px;
+  animation: fly 1.5s ease-in-out 0.5s alternate infinite;
+}
+
+@keyframes fly {
+  from {
+    transform: translateY(4px);
+  }
+  to {
+    transform: translateY(-4px);
+  }
 }
 
 @media (min-width: 768px) {
