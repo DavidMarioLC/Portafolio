@@ -6,4 +6,11 @@
 .highlight {
   position: relative;
   color: var(--secondary);
+  /* style neon */
+  background-image: linear-gradient(
+    hsl(212, 100%, 48%) 25%,
+    hsl(187, 99%, 46%) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
