@@ -1,0 +1,11 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social {
+  font-size: 1.5rem;
+  color: var(--tertiary);
+}
