@@ -38,7 +38,7 @@
 .label {
   position: absolute;
   top: 0;
-
+  color: hsl(212, 100%, 48%);
   transition: all 0.2s ease-out;
   transform: translateY(16px);
   opacity: 0;
@@ -74,6 +74,11 @@
   color: #fff;
   cursor: pointer;
   padding: 0.8rem 1rem;
+  border-radius: 4px;
+
+  /* style neon*/
+  background-color: hsl(212, 100%, 48%);
+  box-shadow: 0 4px 14px 0 #0056d0;
   border-radius: 4px;
 }
 
