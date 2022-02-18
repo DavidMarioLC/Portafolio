@@ -1,0 +1,14 @@
+export { Wrapper } from "./Wrapper";
+export { Header } from "./Header";
+export { Title } from "./Title";
+export { Hero } from "./Hero";
+export { Menu } from "./Menu";
+export { Socials } from "./Socials";
+export { About } from "./About";
+export { Technologies } from "./Technologies";
+export { Projects } from "./Projects";
+export { ProjectCard } from "./ProjectCard";
+export { Contact } from "./Contact";
+export { Footer } from "./Footer";
+export { SliderProjects } from "./SliderProjects";
+export * from "./Decoration";
