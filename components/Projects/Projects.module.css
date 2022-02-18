@@ -1,0 +1,65 @@
+.projects {
+  padding: 5.375rem 0;
+  background: var(--projectsBackground);
+}
+
+.content {
+}
+
+.information {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title {
+  font: var(--title-section);
+  color: var(--tertiary);
+}
+
+.description {
+  font: var(--description-mobile);
+  color: var(--tertiary);
+}
+
+.listProjects {
+}
+
+.listProjectsControls {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 0;
+  gap: 0.5rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: none;
+  font-size: 1rem;
+  padding: 8px;
+
+  cursor: pointer;
+  border: 2.5px solid var(--tertiary);
+  border-radius: 4px;
+}
+
+.button:active {
+  transform: scale(0.94);
+}
+
+.listProjectsContainer {
+}
+
+@media (min-width: 768px) {
+  .title {
+    font: var(--title-section);
+  }
+
+  .description {
+    font: var(--description-desktop);
+  }
+}

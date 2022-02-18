@@ -1,0 +1,78 @@
+import React, { useState, useRef } from "react";
+import style from "./Projects.module.css";
+import { Wrapper, Title, Starts, ProjectCard, SliderProjects } from "../index";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+export const Projects = ({ projects }) => {
+  const slideRef = useRef();
+
+  const next = () => {
+    slideRef.current.slickPrev();
+  };
+
+  const prev = () => {
+    slideRef.current.slickNext();
+  };
+  return (
+    <section className={style.projects} aria-label="My Projects" id="project">
+      <Wrapper>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 0.4,
+              },
+            },
+          }}
+        >
+          <div className={style.content}>
+            <div className={style.information}>
+              <Starts />
+              <Title text="Mis" highlight="Proyectos" />
+              <p className={style.description}>
+                Estos son los proyectos de mi portafolio. Tú puedes revisar
+                algunos de los proyectos en los que he estado trabajando así
+                como también podrás ver las tecnologías que he usado para
+                crearlos.
+              </p>
+            </div>
+            <div className={style.listProjects}>
+              <div className={style.listProjectsControls}>
+                <button
+                  className={style.button}
+                  aria-label="Atrás"
+                  onClick={() => next()}
+                >
+                  <FaArrowLeft />
+                </button>
+                <button
+                  className={style.button}
+                  aria-label="Siguiente"
+                  onClick={() => prev()}
+                >
+                  <FaArrowRight />
+                </button>
+              </div>
+              <div className={style.listProjectsContainer}>
+                <SliderProjects slideRef={slideRef}>
+                  {projects.map((project) => (
+                    <ProjectCard key={project.id} project={project} />
+                  ))}
+                </SliderProjects>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </Wrapper>
+    </section>
+  );
+};
