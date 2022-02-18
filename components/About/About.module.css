@@ -1,0 +1,38 @@
+.about {
+  padding: 5.375rem 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.title {
+  font: var(--title-section);
+  color: var(--tertiary);
+}
+
+.text {
+  font: var(--description-mobile);
+  color: var(--tertiary);
+}
+
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
+  }
+  .resume {
+    flex: 1;
+    position: relative;
+  }
+
+  .stack {
+    flex: 1;
+  }
+
+  .text {
+    font: var(--description-desktop);
+    max-width: 434px;
+  }
+}
