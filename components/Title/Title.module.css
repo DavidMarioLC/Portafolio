@@ -1,0 +1,9 @@
+.title {
+  font: var(--title-section);
+  color: var(--tertiary);
+}
+
+.highlight {
+  position: relative;
+  color: var(--secondary);
+}
