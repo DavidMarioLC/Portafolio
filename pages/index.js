@@ -11,6 +11,24 @@ export default function Home({ projects }) {
           content="Portafolio y web personal de DavidMarioLC"
         />
         <link rel="icon" href="/favicon.ico" />
+        {/* open graph */}
+        <meta
+          property="og:title"
+          content="Portafolio y web personal de DavidMarioLC"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://portafolio-davidmariolc.vercel.app/"
+        />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/DavidMarioLC/Portafolio/main/opengraph.webp"
+        />
+        <meta
+          property="og:description"
+          content="Portafolio y web personal de DavidMarioLC"
+        />
       </Head>
       <Header />
       <Hero />
