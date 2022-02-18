@@ -10,6 +10,7 @@
 .link {
   font: var(--menu-desktop);
   color: var(--tertiary);
+  letter-spacing: 0.5px;
 }
 
 @media (min-width: 920px) {
