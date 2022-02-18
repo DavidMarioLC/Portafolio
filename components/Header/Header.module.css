@@ -1,0 +1,40 @@
+.header {
+  background: var(--glassheader);
+  backdrop-filter: saturate(180%) blur(10px);
+  padding: 1rem 0;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  font-family: poppins;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--tertiary);
+}
+
+.theme {
+  color: var(--tertiary);
+  font-size: 1.5rem;
+  background: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.theme:active {
+  transform: scale(0.96);
+}
