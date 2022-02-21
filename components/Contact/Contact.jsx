@@ -15,10 +15,10 @@ export const Contact = () => {
     setLoading(true);
     emailjs
       .sendForm(
-        "service_ucujz6s",
-        "template_ryrbc4f",
+        process.env.YOUR_SERVICE_ID,
+        process.env.YOUR_TEMPLATE_ID,
         event.currentTarget,
-        "user_kQ0Ba8o7Mxni8P3euMy85"
+        process.env.YOUR_USER_ID
       )
       .then(
         (result) => {
