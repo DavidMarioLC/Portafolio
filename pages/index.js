@@ -45,6 +45,16 @@ export async function getStaticProps() {
     props: {
       projects: [
         {
+          id: "10",
+          name: "Landing Page Ricardo",
+          thumbnail: "/projects/landingpageRicardo.webp",
+          linkRepo: "https://github.com/DavidMarioLC/LandingPage-Ricardo",
+          linkDemo: "https://landing-page-ricardo.vercel.app/",
+          description:
+            "Roberto es un Developer que le encanta implementar diseños que inspiran y atraen a las personas.",
+          technologies: ["React", "Tailwindcss", "Next"],
+        },
+        {
           id: "9",
           name: "Healthy Store",
           thumbnail: "/projects/healthstore.webp",

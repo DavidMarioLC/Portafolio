@@ -11,6 +11,7 @@ import logoSASS from "../../public/stack/sass.svg";
 import logoFirebase from "../../public/stack/firebase.svg";
 import logoNext from "../../public/stack/next.svg";
 import logoTesting from "../../public/stack/testing.svg";
+import logoTailWindCSS from "../../public/stack/tailwindcss.svg";
 
 const getIcon = (value) => {
   const tech = {
@@ -25,6 +26,7 @@ const getIcon = (value) => {
     Firebase: logoFirebase,
     Jest: logoJest,
     Next: logoNext,
+    Tailwindcss: logoTailWindCSS,
   };
   return tech[value];
 };

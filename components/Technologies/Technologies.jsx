@@ -13,7 +13,7 @@ import logoSASS from "../../public/stack/sass.svg";
 import logoFirebase from "../../public/stack/firebase.svg";
 import logoNext from "../../public/stack/next.svg";
 import logoTesting from "../../public/stack/testing.svg";
-
+import tailwindcss from "../../public/stack/tailwindcss.svg";
 export const Technologies = () => {
   const technologies = [
     { id: "1", name: "HTML", image: logoHTML },
@@ -25,9 +25,10 @@ export const Technologies = () => {
     { id: "7", name: "Redux", image: logoRedux },
     { id: "8", name: "Next", image: logoNext },
     { id: "9", name: "TypeScript", image: logoTS },
-    { id: "10", name: "Jest", image: logoJest },
-    { id: "11", name: "Firebase", image: logoFirebase },
-    { id: "12", name: "Testing", image: logoTesting },
+    { id: "10", name: "Tailwindcss", image: tailwindcss },
+    { id: "11", name: "Jest", image: logoJest },
+    { id: "12", name: "Firebase", image: logoFirebase },
+    { id: "13", name: "Testing", image: logoTesting },
   ];
 
   const hiddenTech = (name) => {
