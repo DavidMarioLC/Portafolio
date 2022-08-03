@@ -11,7 +11,7 @@ export const About = () => {
             <DownArrow />
             <Title text="Sobre" highlight="Mí" />
             <p className={style.text}>
-              Me llamó David Mario Licla nací en la ciudad del eterno sol ☀
+              Me llamo David Mario Licla nací en la ciudad del eterno sol ☀
               llamada Ica en Perú.
               <br />
               <br />
